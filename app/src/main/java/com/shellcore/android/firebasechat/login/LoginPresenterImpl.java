@@ -1,17 +1,17 @@
 package com.shellcore.android.firebasechat.login;
 
-import com.shellcore.android.firebasechat.eventbus.GreenRobotEventBus;
+import com.shellcore.android.firebasechat.lib.EventBus;
+import com.shellcore.android.firebasechat.lib.GreenRobotEventBus;
 import com.shellcore.android.firebasechat.login.event.LoginEvent;
 import com.shellcore.android.firebasechat.login.ui.LoginView;
 
-import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
 /**
  * Created by Cesar on 26/06/2017.
  */
 
-class LoginPresenterImpl implements LoginPresenter {
+public class LoginPresenterImpl implements LoginPresenter {
 
     private EventBus eventBus;
 

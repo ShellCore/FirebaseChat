@@ -1,4 +1,4 @@
-package com.shellcore.android.firebasechat;
+package com.shellcore.android.firebasechat.login.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
+import com.shellcore.android.firebasechat.R;
+import com.shellcore.android.firebasechat.contactList.ui.ContactListActivity;
 import com.shellcore.android.firebasechat.login.LoginPresenter;
-import com.shellcore.android.firebasechat.login.ui.LoginView;
+import com.shellcore.android.firebasechat.login.LoginPresenterImpl;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -47,7 +49,9 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-//        presenter = new LoginPresenterImpl();
+        presenter = new LoginPresenterImpl(this);
+        presenter.onCreate();
+        presenter.checkForAuthenticatedUser();
     }
 
     @Override

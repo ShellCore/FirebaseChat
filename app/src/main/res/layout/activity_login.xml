@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="com.shellcore.android.firebasechat.LoginActivity">
+    tools:context="com.shellcore.android.firebasechat.login.ui.LoginActivity">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/til_email"
