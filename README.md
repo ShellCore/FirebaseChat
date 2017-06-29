@@ -1,4 +1,4 @@
-# ![alt-text][] Firebase Chat
+# ![alt-text][logo] Firebase Chat
 
 Android App
 
