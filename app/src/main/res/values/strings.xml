@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Firebase Chat</string>
+    <string name="login.edt.hint.email">Correo electrónico</string>
+    <string name="login.edt.hint.password">Contraseña</string>
+    <string name="login.btn.signup">Registrarse</string>
+    <string name="login.btn.signin">Acceder</string>
+    <string name="login.notice.message.useradded">Se agregó el usuario satisfactóriamente</string>
+    <string name="login.error.message.signin">Ocurrió un error al intentar ingresar: %s</string>
+    <string name="login.error.message.signup">Ocurrió un error al intentar crear un nuevo usuario: %s</string>
+    <string name="contacts.menu.action_logout">Logout</string>
+    <string name="add_contact.message.add">Aceptar</string>
+    <string name="add_contact.message.title">Agregar contacto</string>
+    <string name="add_contact.message.cancel">Cancelar</string>
+    <string name="addcontact_message_contactadded">Se agregó el contacto correctamente</string>
+    <string name="addcontact.error.message">Ocurrió un error al agregar el contacto</string>
+    <string name="contactlist.title">Lista de contactos</string>
 </resources>
