@@ -47,15 +47,20 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         String msg = chatMessage.getMessage();
         holder.txtMessage.setText(msg);
 
-        int color = fetchColor(R.attr.colorPrimary);
-        int gravity = Gravity.LEFT;
+//        int color = fetchColor(R.color.colorToBackground);
+        int color = R.color.colorToBackground;
+        int textColor = R.color.colorToText;
+        int gravity = Gravity.RIGHT;
 
         if(!chatMessage.isSentByMe()) {
-            gravity = Gravity.RIGHT;
-            color = fetchColor(R.attr.colorAccent);
+            gravity = Gravity.LEFT;
+            color = R.color.colorToBackground2;
+            textColor = R.color.colorToText2;
         }
 
-        holder.txtMessage.setBackgroundColor(color);
+//        holder.txtMessage.setBackgroundColor(color);
+        holder.txtMessage.setBackgroundResource(color);
+        holder.txtMessage.setTextColor(context.getResources().getColor(textColor));
         LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) holder.txtMessage.getLayoutParams();
         params.gravity = gravity;
         holder.txtMessage.setLayoutParams(params);
